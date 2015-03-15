@@ -1,2 +1,2 @@
-# MnKyInst.github.io
+# MnKyInst
 MnKyInst Site
