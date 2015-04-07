@@ -1,0 +1,231 @@
+body {
+    font-family:"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei",sans-serif;
+    font-size:17px;
+}
+
+a {
+    text-decoration:none;
+    font-weight:bold;
+    color:#223344;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes fadeout {
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+#intro {
+    position:fixed;
+    top:100px;
+    left:100px;
+    width:10px;
+    height::10px;
+    border-radius:6px;
+    animation: blink 1.5s;
+    animation-iteration-count: infinite;
+    background-color:#000000;
+    transition:all 4s ease-in-out;
+}
+#intro:hover {
+    transform :scale(9);
+    background-color:#ffffff;
+    transition:all 2s linear;
+}
+#logo {
+    position:fixed;
+    top:100px;
+    left:100px;
+    width:10px;
+    height:10px;
+    transform:scale(9);
+    border-radius:6px;
+    transition:all 3s ease-in-out;
+    z-index:3;
+
+}
+html:hover #logo {
+    border-radius:0px;
+}
+#about {
+    animation:fadein 4.5s;
+    font-size:19px;
+    transition:all 1s ease;
+}
+#about:hover {
+    font-size:30px;
+}
+#articles {
+    animation:fadein 5s;
+    font-size:19px;
+    transition:all 1s ease;
+}
+#articles:hover {
+    font-size:30px;
+}
+#contact {
+    animation:fadein 6s;
+    font-size:19px;
+    transition:all 1s ease;
+}
+#contact:hover {
+    font-size:30px;
+}
+.main {
+    background-image: url("../img/art2.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:fixed;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    width:950px;
+    float:right;
+    animation:fadein 2s;
+}
+
+#contentArea{
+    position:absolute;
+    right:340px;
+    top:100px;
+    width:550px;
+    white-space:normal;
+    word-wrap:break-all;
+    margin-left:10px;
+    padding:10px 10px 10px 10px;
+}
+#menu {
+    position:fixed;
+    top:150px;
+    left:80px;
+}
+
+@media screen and (max-width: 1050px){
+#intro {
+    position:fixed;
+    top:50px;
+    left:50px;
+    width:10px;
+    height::10px;
+    border-radius:6px;
+    transition:all 3s ease-in-out;
+    animation: blink 1.5s;
+    animation-iteration-count: infinite;
+}
+#intro:hover {
+    transform :scale(9);
+    transition:all 0.3s linear;
+}
+#logo {
+    position:fixed;
+    top:50px;
+    left:50px;
+    width:10px;
+    height:10px;
+    transform:scale(9);
+    border-radius:6px;
+    transition:all 3s ease-in-out;
+    z-index:3;
+
+}
+html:hover #logo {
+    border-radius:0px;
+}
+#about {
+    animation:fadein 4.5s;
+    font-size:19px;
+    transition:all 1s ease;
+}
+#about:hover {
+    font-size:30px;
+}
+#articles {
+    animation:fadein 5s;
+    font-size:19px;
+    transition:all 1s ease;
+}
+#articles:hover {
+    font-size:30px;
+}
+#contact {
+    animation:fadein 6s;
+    font-size:19px;
+    transition:all 1s ease;
+}
+#contact:hover {
+    font-size:30px;
+}
+.main {
+    background-image: url("../img/art3.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:fixed;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    float:right;
+}
+
+#contentArea{
+    position:absolute;
+    right:180px;
+    top:100px;
+    width:400px;
+    white-space:normal;
+    word-wrap:break-all;
+    margin-left:10px;
+    padding:10px 10px 10px 10px;
+    border:3px solid white;
+}
+#menu {
+    position:fixed;
+    top:50px;
+    left:30px;
+    z-index:5;
+}
+}
+    
+@media screen and (max-width: 700px){
+#contentArea{
+    position:absolute;
+    right:10px;
+    top:200px;
+    width:80%;
+    z-index:5;
+    background-color:#ededed;
+}
+.main {
+    background-image:none;
+    background-color: #eeeeee;
+    width:100%;
+}
+
+}
+
+
+footer {
+    position:fixed;
+    left:10px;
+    bottom:10px;
+}
